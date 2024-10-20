@@ -11,7 +11,7 @@ profile:
   address: >
     <p>CIT 527</p>
     <p>115 Waterman St</p>
-    <p>Providence, RI, 02903</p>
+    <p>Providence, RI, 02912</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
