@@ -9,6 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
+    <p>yizheng_xie@brown.edu</p>
     <p>CIT 527</p>
     <p>115 Waterman St</p>
     <p>Providence, RI, 02912</p>
