@@ -3,81 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Yizheng Xie</title>
     <!-- <link rel="icon" type="image/png" href="img/icon.png"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <h1>Yizheng Xie 谢一正</h1>
+        <header>
+            <h1>Yizheng Xie 谢一正</h1>
+        </header>
 
-    <section class="two-columns-about">
-        <div class="column">
-            <img src="img/avatar.jpeg" class="profile-image" alt="Yizheng Xie" width="200" >
-        </div>
-        <div class="column">
-            <intro>
-                I’m a Ph.D. candidate at Brown University working on distributed systems, advised by <a href="https://nikos.vasilak.is/">Nikos Vasilakis</a> in the <a href="https://www.brown.edu/">Atlas Research Group</a>.
-                Before Brown, I worked with <a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a> and <a href="https://cs-people.bu.edu/liagos/">John Liagouris</a> as part of <a href="https://sites.bu.edu/casp/">CASP Lab</a> at Boston University.
-                I received my undergraduate degree from The Chinese University of Hong Kong, Shenzhen. I was also a Production Engineer intern in the Kernel Team at <a href="https://www.meta.com/">Meta</a>.
-            </intro>
-            <contact>
-            Email: yizheng [_] xie [at] brown [dot] edu <br>
-            Office: CIT 267, 115 Waterman St, Providence, RI, 02912 <br>
-            [<a href="https://github.com/yizhengx">Github</a>] [<a href="https://www.linkedin.com/in/yizheng-xie-a1756921b/">LinkedIn</a>] [<a href="cv.pdf">CV</a>]
-            </contact>
-            <!-- <p>Right column content</p> -->
-        </div>
-    </section>
-
-    <divider>Publications</divider>
-
-    <div class="publications">
-        <div class="two-columns-paper">
-            <div class="column-conference">
-                [NSDI'26]
+        <section class="two-columns-about">
+            <div class="column-img">
+                <img src="img/avatar.jpeg" class="profile-image" alt="Portrait of Yizheng Xie" width="200">
             </div>
-            <div class="column-paper">
-                Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications <br>
-                <u>Yizheng Xie</u>, Di Jin, Oğuzhan Çölkesen, Vasiliki Kalavri, John Liagouris, Nikos Vasilakis <br>
-                <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
-                <a href="comingsoon.html">[paper]</a>
-                <a href="comingsoon.html">[code]</a>
-                <a href="comingsoon.html">[talk]</a>
+            <div class="column-intro">
+                <p class="intro">
+                    I’m a Ph.D. candidate at Brown University working on distributed systems, advised by <a href="https://nikos.vasilak.is/">Nikos Vasilakis</a> in the <a href="https://www.brown.edu/">Atlas Research Group</a>.
+                    Before Brown, I worked with <a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a> and <a href="https://cs-people.bu.edu/liagos/">John Liagouris</a> as part of <a href="https://sites.bu.edu/casp/">CASP Lab</a> at Boston University.
+                    I received my undergraduate degree from The Chinese University of Hong Kong, Shenzhen. I was also a Production Engineer intern in the Kernel Team at <a href="https://www.meta.com/">Meta</a>.
+                </p>
+                <div class="contact">
+                    Email: yizheng [_] xie [at] brown [dot] edu <br>
+                    Office: CIT 267, 115 Waterman St, Providence, RI, 02912 <br>
+                    [<a href="https://github.com/yizhengx">Github</a>] [<a href="https://www.linkedin.com/in/yizheng-xie-a1756921b/">LinkedIn</a>] [<a href="cv.pdf">CV</a>]
+                </div>
             </div>
-        </div>
-        <div class="two-columns-paper">
-            <div class="column-conference">
-                [NSDI'26]
-            </div>
-            <div class="column-paper">
-                Fractal: Fault-Tolerant Shell-Script Distribution <br>
-                Zhicheng Huang, Ramiz Dundar, <u>Yizheng Xie</u>, Konstantinos Kallas, Nikos Vasilakis <br>
-                <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
-                <a href="comingsoon.html">[paper]</a>
-                <a href="comingsoon.html">[code]</a>
-                <a href="comingsoon.html">[talk]</a>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <divider>Teaching</divider>
+        <div class="divider">Publications</div>
 
-    <teaching>
-        <ul class="teaching-list">
-        <li>Brown CSCI1380 Distributed Systems (TA, 23'Spring, 24'Spring) </li>
-        <li>Brown CSCI2952R Systems Seminar (TA, 24'Fall)</li>
-    </ul>
-    </teaching>
-    
-    <footer>
-        Copyright &copy; 2025 by Yizheng Xie
-    </footer>
+        <section class="publications">
+            <div class="two-columns-paper">
+                <div class="column-conference">
+                    [NSDI'26]
+                </div>
+                <div class="column-paper">
+                    Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications <br>
+                    <u>Yizheng Xie</u>, Di Jin, Oğuzhan Çölkesen, Vasiliki Kalavri, John Liagouris, Nikos Vasilakis <br>
+                    <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
+                    <a href="comingsoon.html">[paper]</a>
+                    <a href="comingsoon.html">[code]</a>
+                    <a href="comingsoon.html">[talk]</a>
+                </div>
+            </div>
+            <div class="two-columns-paper">
+                <div class="column-conference">
+                    [NSDI'26]
+                </div>
+                <div class="column-paper">
+                    Fractal: Fault-Tolerant Shell-Script Distribution <br>
+                    Zhicheng Huang, Ramiz Dundar, <u>Yizheng Xie</u>, Konstantinos Kallas, Nikos Vasilakis <br>
+                    <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
+                    <a href="comingsoon.html">[paper]</a>
+                    <a href="comingsoon.html">[code]</a>
+                    <a href="comingsoon.html">[talk]</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider">Teaching</div>
+
+        <section class="teaching-sec">
+            <ul class="teaching-list">
+                <li>Brown CSCI1380 Distributed Systems (TA, 23'Spring, 24'Spring) </li>
+                <li>Brown CSCI2952R Systems Seminar (TA, 24'Fall)</li>
+            </ul>
+        </section>
+        
+        <footer>
+            Copyright &copy; 2025 by Yizheng Xie
+        </footer>
     </div>
 </body>
 </html>
-
-

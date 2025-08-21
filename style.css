@@ -1,135 +1,91 @@
+/* 1. CRITICAL: Ensure proper rendering and touch zooming */
+html {
+    box-sizing: border-box; /* Makes padding calculations intuitive */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
-
-h1, .container {
+/* 2. Base Mobile Styles (for screens less than 768px) */
+body {
     font-family: 'Gentium Book Plus', serif;
+    font-size: 1rem; /* 1rem = 16px (standard mobile base size) */
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 1rem; /* Add padding around the entire body on mobile */
+    /* Prevents horizontal scrolling caused by padding/margin */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px; /* Will only take effect on larger screens */
+    margin: 0 auto;
 }
 
 h1 {
-    /* color: #283593; */
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px / 16px = 1.75rem */
     text-align: center;
-    padding: 15px;
+    padding: 1rem 0;
+    margin-top: 0;
 }
 
-header {
+header, footer {
     text-align: center;
-    margin-bottom: 20px;
 }
 footer {
     display: block;
-    padding-top: 20px;
-    font-size: 14px;
+    padding-top: 1.25rem;
+    font-size: 0.875rem; /* 14px */
     color: #666;
-    text-align: center;
 }
 
-/* Styling links */
+/* Styling links - Make them easier to tap */
 a {
     text-decoration: none;
     color: #252fa1;
+    padding: 0.2rem 0; /* Adds touch-friendly area */
 }
 
-/* About Me */
-
-intro {
+/* Replaced <intro> with .intro class */
+.intro {
+    padding: 0%;
+    margin: 0%;
     display: block;
     color: #444;
-    margin-bottom: 10px;
     text-align: left;
-    line-height: 200%;
-    font-size: 18px;
+    line-height: 1.8; /* Use unitless value for line-height */
+    font-size: 1.125rem; /* 18px */
 }
 
-divider {
-    /* color: #1a237e; */
+/* Replaced <divider> with .divider class */
+.divider {
     display: block;
-    font-size: 24px;
-    padding: 20px;
-    /* margin-top: 20px; */
+    font-size: 1.5rem; /* 24px */
+    padding: 1.25rem 0; /* 20px top/bottom, 0 left/right */
     text-align: center;
-    /* font-style: oblique; */
     font-weight: bold;
 }
 
-
-contact {
+/* Replaced <contact> with .contact class */
+.contact {
     display: block;
     padding: 0.5rem;
-    font-family: "Courier New", monospace; /* monospace font */
+    font-family: "Courier New", monospace;
     text-align: center;
-    font-size: 16px;
-    line-height: 120%;
+    font-size: 1rem;
+    line-height: 1.4;
     background-color: #f4f4f4;
     border-radius: 5px;
+    margin: 1rem 0;
 }
 
 img {
     display: block;
-    margin: 0 auto 20px auto;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    /* background-color: #f5f5f5; */
-    border-radius: 8px;
-}
-
-.two-columns-about {
-  display: flex;   /* Makes the children side-by-side */
-  gap: 10px;       /* Space between columns */
-}
-
-.column {
-  padding: 0.5rem;
-}
-
-.publications {
-    padding-left: 50px;
-    text-align: left;
-    /* max-width: 800px; */
-}
-
-/* Publications */
-
-.two-columns-paper {
-    display: flex;
-    gap: 10px;
-    padding-top: 0%;
-    padding-bottom: 0%;
-}
-
-.column-conference {
-    padding-top: 1rem;
-    padding-right: 0;
-    text-align: left;
-    font-size: 18px;
-}
-
-.column-paper {
-    padding: 1rem;
-    font-size: 18px;
-}
-
-teaching {
-    display: block;
-    /* padding-left: 20px; */
-    font-size: 18px;
-}
-
-.teaching-list li {
-    margin-left: 150px;
-}
-
-/* Stack on smaller screens */
-@media (max-width: 800px) {
-  .two-columns {
-    flex-direction: column;
-  }
-  .two-columns-paper {
-    flex-direction: column;
-  }
+    max-width: 100%; /* Crucial: ensures image never overflows its container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto 1.25rem auto;
 }
 
 .profile-image {
@@ -137,5 +93,90 @@ teaching {
     padding: 1px;
     background: white;
     border: 2px solid #eee;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Softer shadow on mobile */
+    max-width: 300px; /* Control size on mobile */;
+}
+
+/* --- Layouts --- */
+.two-columns-about,
+.two-columns-paper {
+  display: flex;
+  flex-direction: column; /* Stack columns on top of each other by default (mobile) */
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.column-paper {
+  padding: 0.5rem;
+  width: 100%; /* Make each column full width on mobile */
+}
+.column-conference {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    text-align: right;
+}
+
+.publications {
+    padding-left: 0; /* Remove large left padding on mobile */
+    text-align: left;
+}
+
+.teaching-sec {
+    width: 500px;
+    margin: 0 auto; /* Center the teaching section */
+}
+
+.teaching-list {
+    padding-left: 1.5rem; /* Use relative padding instead of fixed margin */
+}
+.teaching-list li {
+    margin-bottom: 0.5rem; /* Add space between list items */
+    margin-left: 0; /* REMOVE the huge fixed margin */
+}
+
+/* 3. Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        padding: 2rem; /* More padding on larger screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Larger heading on desktop */
+    }
+
+    .profile-image {
+        max-width: 300px; /* Slightly larger image */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Stronger shadow on desktop */
+    }
+
+    /* Switch to horizontal layout on larger screens */
+    .two-columns-about,
+    .two-columns-paper {
+        flex-direction: row;
+    }
+    /* Make columns side-by-side. Adjust widths as needed. */
+    .two-columns-about .column:first-child {
+        flex: 1; /* Takes 1 part of the space */
+    }
+    .two-columns-about .column:last-child {
+        flex: 2; /* Takes 2 parts of the space (2/3) */
+    }
+
+    .two-columns-paper .column-conference {
+        flex: 0.5;
+    }
+    .two-columns-paper .column-paper {
+        flex: 5;
+    }
+
+    .publications {
+        /* Re-add some indentation on desktop */
+        padding-left: 2rem; 
+    }
+
+    /* Teaching list can have more space on desktop */
+    .teaching-list {
+        padding-left: 2rem;
+    }
 }
