@@ -123,8 +123,9 @@ img {
 }
 
 .teaching-sec {
-    width: 500px;
+    width: 600px;
     margin: 0 auto; /* Center the teaching section */
+    font-size: 18px;
 }
 
 .teaching-list {
