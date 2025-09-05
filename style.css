@@ -31,6 +31,11 @@ h1 {
     margin-top: 0;
 }
 
+.cn_name {
+    font-family: "KaiTi", "STKaiti", "FangSong", "SimSun", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    margin-left: 5px;
+}
+
 header, footer {
     text-align: center;
 }
@@ -79,13 +84,14 @@ a {
     background-color: #f4f4f4;
     border-radius: 5px;
     margin: 1rem 0;
+    
 }
 
 img {
     display: block;
     max-width: 100%; /* Crucial: ensures image never overflows its container */
     height: auto; /* Maintains aspect ratio */
-    margin: 0 auto 1.25rem auto;
+    margin: 0 auto 0 auto;
 }
 
 .profile-image {
@@ -123,8 +129,12 @@ img {
 }
 
 .teaching-sec {
-    width: 600px;
-    margin: 0 auto; /* Center the teaching section */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;         /* fluid by default */
+    max-width: 600px;    /* cap the width */
+    margin: 0 auto;      /* center horizontally */
     font-size: 18px;
 }
 
@@ -170,7 +180,7 @@ img {
     .two-columns-paper .column-paper {
         flex: 5;
     }
-
+    
     .publications {
         /* Re-add some indentation on desktop */
         padding-left: 2rem; 
