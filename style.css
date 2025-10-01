@@ -59,7 +59,7 @@ a {
     margin: 0%;
     display: block;
     color: #444;
-    text-align: left;
+    text-align:justify;
     line-height: 1.8; /* Use unitless value for line-height */
     font-size: 1.125rem; /* 18px */
 }
