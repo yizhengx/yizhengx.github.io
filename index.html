@@ -12,84 +12,102 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Yizheng Xie <span class="cn_name">谢一正</span></h1>
-        </header>
+        <div class="page-layout">
+            <aside class="left-panel">
+                <header>
+                    <h1>Yizheng Xie<br><span class="cn_name">谢一正</span></h1>
+                </header>
+                <div class="mobile-profile-row">
+                    <div class="column-img">
+                        <img src="img/avatar.jpeg" class="profile-image" alt="Portrait of Yizheng Xie" width="200">
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact">
+                            <strong>Email:</strong> <span class="office-lines">yizheng [_] xie<br>[at] brown [dot] edu</span> <br>
+                            <strong>Office:</strong> <span class="office-lines">CIT 267<br>115 Waterman St<br>Providence, RI 02912</span> <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-strip">
+                    <a class="logo-link-icon" href="https://github.com/yizhengx" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub">
+                    </a>
+                    <a class="logo-link-icon" href="https://www.linkedin.com/in/yizheng-xie-a1756921b/" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a class="logo-link-icon" href="https://scholar.google.com/citations?user=KcBbS6sAAAAJ&hl=en" aria-label="Google Scholar">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlescholar.svg" alt="Google Scholar">
+                    </a>
+                    <a class="logo-link-icon cv-icon" href="cv.pdf" aria-label="CV">CV</a>
+                </div>
+            </aside>
 
-        <section class="two-columns-about">
-            <div class="column-img">
-                <img src="img/avatar.jpeg" class="profile-image" alt="Portrait of Yizheng Xie" width="200">
-            </div>
-            <div class="column-intro">
-                <div class="intro">
-                    I’m a Ph.D. candidate at Brown University advised by <a href="https://nikos.vasilak.is/">Nikos Vasilakis</a> in the <a href="https://atlas.cs.brown.edu/">Atlas Research Group</a>.
-                    <!-- <br> -->
-                    My research interests include distributed systems, operating systems, and cloud computing—with a particular focus on performance prediction and optimization for modular software architectures such as microservices, serverless platforms, and the shell.
-                    <!-- <br> -->
-                    Before Brown, I worked with <a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a> and <a href="https://cs-people.bu.edu/liagos/">John Liagouris</a> as part of <a href="https://sites.bu.edu/casp/">CASP Lab</a> at Boston University.
-                    I received my undergraduate degree from The Chinese University of Hong Kong, Shenzhen. I was also a Production Engineer intern in the Kernel Team at <a href="https://www.meta.com/">Meta</a>.
-                </div>
-                <div class="contact">
-                    Email : yizheng [_] xie [at] brown [dot] edu <br>
-                    Office: CIT 267, 115 Waterman St, Providence, RI, 02912 <br>
-                    Others: <a href="https://github.com/yizhengx">Github</a>, <a href="https://www.linkedin.com/in/yizheng-xie-a1756921b/">LinkedIn</a>, <a href="cv.pdf">CV</a>, <a href=https://scholar.google.com/citations?user=KcBbS6sAAAAJ&hl=en>Scholar</a>
-                </div>
-            </div>
-        </section>
+            <main class="right-panel">
+                <h2 class="section-heading">About Me</h2>
+                <section class="about-sec">
+                    <div class="intro">
+                        I’m a Ph.D. candidate at Brown University advised by <a href="https://nikos.vasilak.is/">Nikos Vasilakis</a> in the <a href="https://atlas.cs.brown.edu/">Atlas Research Group</a>.
+                        My research interests include distributed systems, operating systems, and cloud computing—with a particular focus on performance prediction and optimization for modular software architectures such as microservices, serverless platforms, and the shell.
+                        Before Brown, I worked with <a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a> and <a href="https://cs-people.bu.edu/liagos/">John Liagouris</a> as part of <a href="https://sites.bu.edu/casp/">CASP Lab</a> at Boston University.
+                        I received my undergraduate degree from The Chinese University of Hong Kong, Shenzhen. I was also a Production Engineer intern in the Kernel Team at <a href="https://www.meta.com/">Meta</a>.
+                    </div>
+                </section>
 
-        <div class="divider">Publications</div>
+                <h2 class="section-heading">Publications</h2>
 
-        <section class="publications">
-            <div class="two-columns-paper">
-                <div class="column-conference">
-                    [NSDI'26]
-                </div>
-                <div class="column-paper">
-                    Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications <br>
-                    <u>Yizheng Xie</u>, Di Jin, Oğuzhan Çölkesen, Vasiliki Kalavri, John Liagouris, Nikos Vasilakis <br>
-                    <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
-                    <a href="p/slowpoke:nsdi:2026.pdf">[paper]</a>
-                    <a href="https://github.com/atlas-brown/slowpoke">[code]</a>
-                </div>
-            </div>
-            <div class="two-columns-paper">
-                <div class="column-conference">
-                    [NSDI'26]
-                </div>
-                <div class="column-paper">
-                    Fractal: Fault-Tolerant Shell-Script Distribution <br>
-                    Zhicheng Huang, Ramiz Dundar, <u>Yizheng Xie</u>, Konstantinos Kallas, Nikos Vasilakis <br>
-                    <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
-                    <a href="p/fractal:nsdi:2026.pdf">[paper]</a>
-                    <a href="https://github.com/binpash/fractal">[code]</a>
-                </div>
-            </div>
-            <div class="two-columns-paper">
-                <div class="column-conference">
-                    [PLOS'25]
-                </div>
-                <div class="column-paper">
-                    Towards Hybrid Cooperative-Preemptive Scheduling <br>
-                    <u>Yizheng Xie</u>, Di Jin, Nikos Vasilakis <br>
-                    <em>13th Workshop on Programming Languages and Operating Systems</em> <br>
-                    <a href="https://dl.acm.org/doi/10.1145/3764860.3768329">[ACM]</a>
-                    <a href="p/cocoon:plos:2025.pdf">[paper]</a>
-                    <a href="https://plos-workshop.org/2025/docs/slides/xie.pdf">[slides]</a>
-                </div>
-            </div>
-        </section>
+                <section class="publications">
+                    <div class="two-columns-paper">
+                        <div class="column-conference">
+                            [NSDI'26]
+                        </div>
+                        <div class="column-paper">
+                            Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications <br>
+                            <u>Yizheng Xie</u>, Di Jin, Oğuzhan Çölkesen, Vasiliki Kalavri, John Liagouris, Nikos Vasilakis <br>
+                            <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
+                            <a href="p/slowpoke:nsdi:2026.pdf">[paper]</a>
+                            <a href="https://github.com/atlas-brown/slowpoke">[code]</a>
+                        </div>
+                    </div>
+                    <div class="two-columns-paper">
+                        <div class="column-conference">
+                            [NSDI'26]
+                        </div>
+                        <div class="column-paper">
+                            Fractal: Fault-Tolerant Shell-Script Distribution <br>
+                            Zhicheng Huang, Ramiz Dundar, <u>Yizheng Xie</u>, Konstantinos Kallas, Nikos Vasilakis <br>
+                            <em>23rd USENIX Symposium on Networked Systems Design and Implementation</em> <br>
+                            <a href="p/fractal:nsdi:2026.pdf">[paper]</a>
+                            <a href="https://github.com/binpash/fractal">[code]</a>
+                        </div>
+                    </div>
+                    <div class="two-columns-paper">
+                        <div class="column-conference">
+                            [PLOS'25]
+                        </div>
+                        <div class="column-paper">
+                            Towards Hybrid Cooperative-Preemptive Scheduling <br>
+                            <u>Yizheng Xie</u>, Di Jin, Nikos Vasilakis <br>
+                            <em>13th Workshop on Programming Languages and Operating Systems</em> <br>
+                            <a href="https://dl.acm.org/doi/10.1145/3764860.3768329">[ACM]</a>
+                            <a href="p/cocoon:plos:2025.pdf">[paper]</a>
+                            <a href="https://plos-workshop.org/2025/docs/slides/xie.pdf">[slides]</a>
+                        </div>
+                    </div>
+                </section>
 
-        <div class="divider">Teaching</div>
+                <h2 class="section-heading">Teaching</h2>
 
-        <section class="teaching-sec">
-            <ul class="teaching-list">
-                <li>Brown <a href="https://cs.brown.edu/courses/csci1380/">CSCI1380</a> Distributed Systems (TA, 23'Spring, 24'Spring)</li>
-                <li>Brown <a href="https://cs.brown.edu/courses/csci2952r/">CSCI2952R</a> Systems Seminar (TA, 24'Fall)</li>
-            </ul>
-        </section>
-        
+                <section class="teaching-sec">
+                    <ul class="teaching-list">
+                        <li>Brown <a href="https://cs.brown.edu/courses/csci1380/">CSCI1380</a> Distributed Systems (TA, 23'Spring, 24'Spring)</li>
+                        <li>Brown <a href="https://cs.brown.edu/courses/csci2952r/">CSCI2952R</a> Systems Seminar (TA, 24'Fall)</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+
         <footer>
-            Copyright &copy; 2025 by Yizheng Xie
+            Last updated: <span id="last-updated">March 2026</span>
         </footer>
     </div>
 </body>
