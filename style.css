@@ -233,6 +233,51 @@ img {
     margin-top: 0.2rem;
 }
 
+.experience-sec {
+    margin-top: 0.35rem;
+}
+
+.experience-item {
+    padding: 0.65rem 0 0.8rem;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.05rem;
+}
+
+.experience-org {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.experience-loc {
+    color: #666;
+    font-size: 0.96rem;
+}
+
+.experience-dates {
+    color: #666;
+    font-size: 0.96rem;
+}
+
+.experience-role {
+    font-size: 1.02rem;
+    font-style: italic;
+    color: #333;
+}
+
+.experience-details {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.experience-details li {
+    margin-bottom: 0.28rem;
+}
+
 .teaching-list {
     padding-left: 1.2rem;
     margin: 0;
@@ -308,4 +353,18 @@ img {
     .column-paper {
         flex: 1;
     }
+
+    .experience-grid {
+        grid-template-columns: minmax(0, 1fr) auto;
+        column-gap: 1rem;
+        row-gap: 0.12rem;
+        align-items: baseline;
+    }
+
+    .experience-loc,
+    .experience-dates {
+        white-space: nowrap;
+        text-align: right;
+    }
+
 }
